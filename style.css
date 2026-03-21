@@ -1,0 +1,23 @@
+header {
+    background-color: #007d79;
+}
+#header_content{
+    /* margin: top right bottom left */
+    margin: auto 5vw auto 5vw;
+}
+
+#header_content > div{
+    align-content: center;
+}
+
+#header_content > #app_name{
+    font: Veranda, sans-serif;
+    font-size: 2.3rem;
+    font-style: italic;
+    color: #FFFFFF;
+}
+
+#header_content #tagline{
+    font-size: 1rem;
+    color: #f0f7f6;
+}
