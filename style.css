@@ -1,19 +1,47 @@
+:root {
+    --base-font: Arial, sans-serif;
+    
+    --section-heading-font-size: 1.25rem;
+    --section-heading-font-weight: 700;
+
+    --app-name-font: Veranda, sans-serif;
+    --app-name-font-size: 2.3rem;
+    --app-name-font-style: italic;
+    --app-name-font-color: #FFFFFF;
+
+    --tagline-font-size: 1rem;
+    --tagline-font-color: #f0f7f6;
+
+    --background-color: #edecef;
+    --contrasting-background: #FFFFFF;
+    --header-background-color: #007d79;
+    --primary-btn-color: #007d79;
+    --secondary-btn-color: #6c757d;
+}
+
 header {
-    background-color: #007d79;
+    background-color: var(--header-background-color);
 }
 
 #header_content > .row > .col-md, .col-md-auto{
     align-content: center;
+    font-family: var(--base-font);
 }
 
 #header_content > .row > #app_name{
-    font: Veranda, sans-serif;
-    font-size: 2.3rem;
-    font-style: italic;
-    color: #FFFFFF;
+    font-family: var(--app-name-font);
+    font-size: var(--app-name-font-size);
+    font-style:var(--app-name-font-style);
+    color: var(--app-name-font-color);
 }
 
 #header_content > .row > #tagline{
-    font-size: 1rem;
-    color: #f0f7f6;
+    font-size: var(--tagline-font-size);
+    color: var(--tagline-font-color);
+}
+
+.container-lg > #row_one > #section_heading {
+    font-family: var(--base-font);
+    font-size: var(--section-heading-font-size);
+    font-weight: var(--section-heading-font-weight);
 }
