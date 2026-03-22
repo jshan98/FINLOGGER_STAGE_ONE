@@ -25,7 +25,8 @@
     --row-margin-top: 30px;
     --card-content-margin: 0.5rem;
     --card-title-font-weight: bold;
-    --icon-max-width: 40px;
+    --overview-icons-width: 40px;
+    --expense-details-icons-width: 17px;
 
 }
 
@@ -54,6 +55,10 @@ header {
     font-family: var(--base-font);
 }
 
+body{
+    background-color: var(--background-color);
+}
+
 .container-lg > #rowOne > #sectionHeading {
     font-family: var(--base-font);
     font-size: var(--section-heading-font-size);
@@ -78,7 +83,7 @@ header {
 }
 
 .container-lg > #rowTwo > .col-md-4 > .card > .card-body > .d-flex > .mr-3 > img{
-    max-width: var(--icon-max-width);
+    width: var(--overview-icons-width);
 }
 
 .container-lg > #rowTwo > .col-md-4 > .card > .card-body > .d-flex > .card-content{
@@ -88,4 +93,14 @@ header {
 .container-lg > #rowTwo > .col-md-4 > .card > .card-body > .d-flex > .card-content > .card-title{
     margin-top: var(--card-content-margin);
     font-weight: var(--card-title-font-weight);
+}
+
+.container-lg > #rowThree > .col-md-8 > #expense-details > tbody > a, img{
+    width: var(--expense-details-icons-width);
+}
+
+.container-lg > #rowThree > div > p{
+    font-family: var(--base-font);
+    font-weight: var(--card-title-font-weight);
+    font-size: var(--section-heading-font-size);
 }
