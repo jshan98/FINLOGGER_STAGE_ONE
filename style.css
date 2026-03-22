@@ -24,6 +24,7 @@
 
     --row-margin-top: 30px;
     --card-content-margin: 0.5rem;
+    --card-title-font-weight: bold;
     --icon-max-width: 40px;
 
 }
@@ -47,6 +48,10 @@ header {
 #headerContent > .row > #tagline{
     font-size: var(--tagline-font-size);
     color: var(--tagline-font-color);
+}
+
+.container-lg{
+    font-family: var(--base-font);
 }
 
 .container-lg > #rowOne > #sectionHeading {
@@ -77,6 +82,10 @@ header {
 }
 
 .container-lg > #rowTwo > .col-md-4 > .card > .card-body > .d-flex > .card-content{
-    font-family: var(--base-font);
-    margin: var(--card-content-margin);
+    margin-left: var(--card-content-margin);
+}
+
+.container-lg > #rowTwo > .col-md-4 > .card > .card-body > .d-flex > .card-content > .card-title{
+    margin-top: var(--card-content-margin);
+    font-weight: var(--card-title-font-weight);
 }
