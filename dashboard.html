@@ -9,21 +9,25 @@
 </head>
 <body>
     <header>
-        <div class="container-lg" id="header_content">
+        <div class="container-lg" id="headerContent">
             <div class="row">
-                <div class="col-md" id="app_name">FinLogger</div>
+                <div class="col-md" id="appName">FinLogger</div>
                 <div class="col-md-auto" id="tagline">Your financial diary!</div>
             </div>
         </div>
     </header>
-    <div class="container-lg">
-        <div class="row">
-
+    <div class="container-lg" >
+        <div class="row" id="rowOne">
+            <div class="col-md" id="sectionHeading">OVERVIEW</div>
+            <div class="col-md-auto">
+                <input type="month" id="monthFilter" value="2020-01" class="form-control"/>
+                <button type="button" class="btn btn-primary ml-4 float-end expButton" data-mode="add" id="addExpense">Add Expense</button>
+            </div>
         </div>
-        <div class="row">
+        <div class="row" id="rowTwo">
             
         </div>
-        <div class="row">
+        <div class="row" id="rowThree">
             
         </div>
     </div>

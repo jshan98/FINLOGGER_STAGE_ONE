@@ -1,6 +1,6 @@
 :root {
     --base-font: Arial, sans-serif;
-    
+
     --section-heading-font-size: 1.25rem;
     --section-heading-font-weight: 700;
 
@@ -17,31 +17,46 @@
     --header-background-color: #007d79;
     --primary-btn-color: #007d79;
     --secondary-btn-color: #6c757d;
+    --btn-font-color: #FFFFFF;
+    --hover-btn-color: #005d5d;
 }
 
 header {
     background-color: var(--header-background-color);
 }
 
-#header_content > .row > .col-md, .col-md-auto{
+#headerContent > .row > .col-md, .col-md-auto{
     align-content: center;
     font-family: var(--base-font);
 }
 
-#header_content > .row > #app_name{
+#headerContent > .row > #appName{
     font-family: var(--app-name-font);
     font-size: var(--app-name-font-size);
     font-style:var(--app-name-font-style);
     color: var(--app-name-font-color);
 }
 
-#header_content > .row > #tagline{
+#headerContent > .row > #tagline{
     font-size: var(--tagline-font-size);
     color: var(--tagline-font-color);
 }
 
-.container-lg > #row_one > #section_heading {
+.container-lg > #rowOne > #sectionHeading {
     font-family: var(--base-font);
     font-size: var(--section-heading-font-size);
     font-weight: var(--section-heading-font-weight);
+}
+
+.container-lg > #rowOne > .col-md-auto {
+    
+}
+
+.container-lg > #rowOne > .col-md-auto > #addExpense{
+    background-color: var(--primary-btn-color);
+    color: var(--btn-font-color);
+}
+
+.container-lg > #rowOne > .col-md-auto > #addExpense:hover{
+    background-color: var(--hover-btn-color);
 }
