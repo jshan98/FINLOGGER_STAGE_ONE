@@ -13,6 +13,12 @@ function renderExpenseOverview(){
     $("#balance").text("$" + (user.income - expenseData.totalExpenses));
 }
 
+/**
+ * Function: renderExpensesSummary
+ * Description: Renders the content of the Expense Summary Table
+ * @param: none
+ * return: void
+ */
 function renderExpenseSummary(){
     let expenseSummaryTableBody = document.querySelector("#expense-summary tbody");
     expenseSummaryTableBody.innerHTML = "";
