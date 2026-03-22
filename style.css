@@ -48,10 +48,6 @@ header {
     font-weight: var(--section-heading-font-weight);
 }
 
-.container-lg > #rowOne > .col-md-auto {
-    
-}
-
 .container-lg > #rowOne > .col-md-auto > #addExpense{
     background-color: var(--primary-btn-color);
     color: var(--btn-font-color);
