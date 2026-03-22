@@ -19,6 +19,13 @@
     --secondary-btn-color: #6c757d;
     --btn-font-color: #FFFFFF;
     --hover-btn-color: #005d5d;
+
+    --month-input-width: 170px;
+
+    --row-margin-top: 30px;
+    --card-content-margin: 0.5rem;
+    --icon-max-width: 40px;
+
 }
 
 header {
@@ -55,4 +62,21 @@ header {
 
 .container-lg > #rowOne > .col-md-auto > #addExpense:hover{
     background-color: var(--hover-btn-color);
+}
+
+.container-lg > .row{
+    margin-top: var(--row-margin-top);
+}
+
+.container-lg > #rowOne > .col-md-auto > #monthFilter {
+    width: var(--month-input-width);
+}
+
+.container-lg > #rowTwo > .col-md-4 > .card > .card-body > .d-flex > .mr-3 > img{
+    max-width: var(--icon-max-width);
+}
+
+.container-lg > #rowTwo > .col-md-4 > .card > .card-body > .d-flex > .card-content{
+    font-family: var(--base-font);
+    margin: var(--card-content-margin);
 }
