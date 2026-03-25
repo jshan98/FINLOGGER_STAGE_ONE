@@ -34,15 +34,17 @@
 
 }
 
+/* Header Background Color */
 header {
     background-color: var(--header-background-color);
 }
 
+/* Header Content Alignment */
 #headerContent > .row > .col-md, .col-md-auto{
     align-content: center;
-    font-family: var(--base-font);
 }
 
+/* Header App Name Font Styling */
 #headerContent > .row > #appName{
     font-family: var(--app-name-font);
     font-size: var(--app-name-font-size);
@@ -50,94 +52,115 @@ header {
     color: var(--app-name-font-color);
 }
 
+/* Header Tagline Font Styling */
 #headerContent > .row > #tagline{
     font-size: var(--tagline-font-size);
     color: var(--tagline-font-color);
 }
 
+/* Boostrap Container-Large Font-Family */
 .container-lg{
     font-family: var(--base-font);
 }
 
+/* HTML Body background Color */
 body{
     background-color: var(--background-color);
 }
 
+/* Row One Section Heading Font Styling */
 .container-lg > #rowOne > #sectionHeading {
     font-family: var(--base-font);
     font-size: var(--section-heading-font-size);
     font-weight: var(--section-heading-font-weight);
 }
 
+/* Month Filter Display Styling */
 .container-lg > #rowOne > .col-md-auto{
     display: var(--month-filter-display);
     gap: var(--month-filter-gap-size);
 }
 
+/* Add Expense Button Styling */
 .container-lg > #rowOne > .col-md-auto > #addExpense{
     background-color: var(--primary-btn-color);
     color: var(--btn-font-color);
 }
 
+/* Add Expense Button on Hover Styling */
 .container-lg > #rowOne > .col-md-auto > #addExpense:hover{
     background-color: var(--hover-btn-color);
 }
 
+/* Margin Top for All Rows */
 .container-lg > .row{
     margin-top: var(--row-margin-top);
 }
 
+/* Month Filter Width */
 .container-lg > #rowOne > .col-md-auto > #monthFilter {
     width: var(--month-input-width);
 }
 
+/* Card Width */
 .container-lg > #rowTwo > .col-md-4 > .card > .card-body > .d-flex > .mr-3 > img{
     width: var(--overview-icons-width);
 }
 
+/* Card Content Margin Left */
 .container-lg > #rowTwo > .col-md-4 > .card > .card-body > .d-flex > .card-content{
     margin-left: var(--card-content-margin);
 }
 
+/* Card Title Margin Top & Font Weight */
 .container-lg > #rowTwo > .col-md-4 > .card > .card-body > .d-flex > .card-content > .card-title{
     margin-top: var(--card-content-margin);
     font-weight: var(--card-title-font-weight);
 }
 
+/* Expense-Details Icon Width */
 .container-lg > #rowThree > .col-md-8 > #expense-details > tbody > a, img{
     width: var(--expense-details-icons-width);
 }
 
+/* Row 3 Table 'Headings' (The paragraph tags) Font Styling */
 .container-lg > #rowThree > div > p{
     font-family: var(--base-font);
     font-weight: var(--card-title-font-weight);
     font-size: var(--section-heading-font-size);
 }
 
-.modal > .modal-dialog > .modal-content > .modal-header > h5{
-    font-family: var(--base-font);
-}
-
+/* Expense Entry Form Font-Family */
 .modal > .modal-dialog > .modal-content > .modal-body > #expenseForm > div{
     font-family: var(--base-font);
 }
 
+/* Generic Modal Body Font-Family */
+.modal > .modal-dialog > .modal-content > .modal-body > .modal-content > div{
+    font-family: var(--base-font);
+}
+
+/* Generic Modal Footer Font-Family */
 .modal > .modal-dialog > .modal-content > .modal-footer{
     font-family: var(--base-font);
 }
 
+/* Secondary Modal Button Background Color */
 .modal > .modal-dialog > .modal-content > .modal-footer > .btn-secondary{
     background-color: var(--secondary-btn-color);
 }
 
+/* Primary Modal Button Background Color */
 .modal > .modal-dialog > .modal-content > .modal-footer > .btn-primary{
     background-color: var(--primary-btn-color);
 }
 
+/* Primary Modal Button Background Color on Hover */
 .modal > .modal-dialog > .modal-content > .modal-footer > .btn-primary:hover{
     background-color: var(--hover-btn-color);
 }
 
+/*Expense Entry Modal Label Margin Top */
 .modal > .modal-dialog > .modal-content > .modal-body > #expenseForm > .form-group > label{
     margin-top: var(--modal-label-margin-top);
 }
