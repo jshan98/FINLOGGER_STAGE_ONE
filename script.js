@@ -106,6 +106,13 @@ function setCategoryDropdown(){
     });
 }
 
+/**
+ * Function: addExpenseHandler
+ * Description: renders the contents of the Expense modal window based on whether an
+ * expense is being added or edited (selected by user)
+ * @param none
+ * return: none
+ */
 function addExpenseHandler(){
     $(".expButton").click(function(event){
         event.preventDefault();
