@@ -34,17 +34,44 @@
 
 }
 
-/* Header Background Color */
+/** Styling for smaller devices **/
+@media (max-width: 768px) {
+    /** Align Tagline in header to the left **/
+    .tagline {
+        float: left;
+    }
+    /** Align month filter in header to the left **/
+    .container-lg > #rowOne > .col-md-auto > #monthFilter {
+        float: left !important;
+    } 
+    /** Adjust margins **/
+    .container-lg > #rowTwo > .col-md-4 > .card > {
+        margin-bottom: 5px;
+    }
+
+    /** The three styles below are for the margin tops of the main container, rows within that container, and the tables within the third row **/
+    .main-container {
+        margin-top: 15px;
+    }
+    .container-lg > .row {
+        margin-top: 15px;
+    }
+    .container-lg > .row > .tbl-container {
+        margin-top: 10px;
+    }
+}
+
+/** Header Background Color **/
 header {
     background-color: var(--header-background-color);
 }
 
-/* Header Content Alignment */
+/** Header Content Alignment **/
 #headerContent > .row > .col-md, .col-md-auto{
     align-content: center;
 }
 
-/* Header App Name Font Styling */
+/** Header App Name Font Styling **/
 #headerContent > .row > #appName{
     font-family: var(--app-name-font);
     font-size: var(--app-name-font-size);
@@ -52,115 +79,115 @@ header {
     color: var(--app-name-font-color);
 }
 
-/* Header Tagline Font Styling */
+/** Header Tagline Font Styling **/
 #headerContent > .row > #tagline{
     font-size: var(--tagline-font-size);
     color: var(--tagline-font-color);
 }
 
-/* Boostrap Container-Large Font-Family */
+/** Boostrap Container-Large Font-Family **/
 .container-lg{
     font-family: var(--base-font);
 }
 
-/* HTML Body background Color */
+/** HTML Body background Color **/
 body{
     background-color: var(--background-color);
 }
 
-/* Row One Section Heading Font Styling */
+/** Row One Section Heading Font Styling **/
 .container-lg > #rowOne > #sectionHeading {
     font-family: var(--base-font);
     font-size: var(--section-heading-font-size);
     font-weight: var(--section-heading-font-weight);
 }
 
-/* Month Filter Display Styling */
+/** Month Filter Display Styling **/
 .container-lg > #rowOne > .col-md-auto{
     display: var(--month-filter-display);
     gap: var(--month-filter-gap-size);
 }
 
-/* Add Expense Button Styling */
+/** Add Expense Button Styling **/
 .container-lg > #rowOne > .col-md-auto > #addExpense{
     background-color: var(--primary-btn-color);
     color: var(--btn-font-color);
 }
 
-/* Add Expense Button on Hover Styling */
+/** Add Expense Button on Hover Styling **/
 .container-lg > #rowOne > .col-md-auto > #addExpense:hover{
     background-color: var(--hover-btn-color);
 }
 
-/* Margin Top for All Rows */
+/** Margin Top for All Rows **/
 .container-lg > .row{
     margin-top: var(--row-margin-top);
 }
 
-/* Month Filter Width */
+/** Month Filter Width **/
 .container-lg > #rowOne > .col-md-auto > #monthFilter {
     width: var(--month-input-width);
 }
 
-/* Card Width */
+/** Card Width **/
 .container-lg > #rowTwo > .col-md-4 > .card > .card-body > .d-flex > .mr-3 > img{
     width: var(--overview-icons-width);
 }
 
-/* Card Content Margin Left */
+/** Card Content Margin Left **/
 .container-lg > #rowTwo > .col-md-4 > .card > .card-body > .d-flex > .card-content{
     margin-left: var(--card-content-margin);
 }
 
-/* Card Title Margin Top & Font Weight */
+/** Card Title Margin Top & Font Weight **/
 .container-lg > #rowTwo > .col-md-4 > .card > .card-body > .d-flex > .card-content > .card-title{
     margin-top: var(--card-content-margin);
     font-weight: var(--card-title-font-weight);
 }
 
-/* Expense-Details Icon Width */
+/** Expense-Details Icon Width **/
 .container-lg > #rowThree > .col-md-8 > #expense-details > tbody > a, img{
     width: var(--expense-details-icons-width);
 }
 
-/* Row 3 Table 'Headings' (The paragraph tags) Font Styling */
+/** Row 3 Table 'Headings' (The paragraph tags) Font Styling **/
 .container-lg > #rowThree > div > p{
     font-family: var(--base-font);
     font-weight: var(--card-title-font-weight);
     font-size: var(--section-heading-font-size);
 }
 
-/* Expense Entry Form Font-Family */
+/** Expense Entry Form Font-Family **/
 .modal > .modal-dialog > .modal-content > .modal-body > #expenseForm > div{
     font-family: var(--base-font);
 }
 
-/* Generic Modal Body Font-Family */
+/** Generic Modal Body Font-Family **/
 .modal > .modal-dialog > .modal-content > .modal-body > .modal-content > div{
     font-family: var(--base-font);
 }
 
-/* Generic Modal Footer Font-Family */
+/** Generic Modal Footer Font-Family **/
 .modal > .modal-dialog > .modal-content > .modal-footer{
     font-family: var(--base-font);
 }
 
-/* Secondary Modal Button Background Color */
+/** Secondary Modal Button Background Color **/
 .modal > .modal-dialog > .modal-content > .modal-footer > .btn-secondary{
     background-color: var(--secondary-btn-color);
 }
 
-/* Primary Modal Button Background Color */
+/** Primary Modal Button Background Color **/
 .modal > .modal-dialog > .modal-content > .modal-footer > .btn-primary{
     background-color: var(--primary-btn-color);
 }
 
-/* Primary Modal Button Background Color on Hover */
+/** Primary Modal Button Background Color on Hover **/
 .modal > .modal-dialog > .modal-content > .modal-footer > .btn-primary:hover{
     background-color: var(--hover-btn-color);
 }
 
-/*Expense Entry Modal Label Margin Top */
+/**Expense Entry Modal Label Margin Top **/
 .modal > .modal-dialog > .modal-content > .modal-body > #expenseForm > .form-group > label{
     margin-top: var(--modal-label-margin-top);
 }
