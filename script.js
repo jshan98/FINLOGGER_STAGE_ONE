@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", renderExpenseOverview);
 document.addEventListener("DOMContentLoaded", renderExpenseSummary);
 document.addEventListener("DOMContentLoaded", renderExpenseData);
+document.addEventListener("DOMContentLoaded", setCategoryDropdown);
+document.addEventListener("DOMContentLoaded", addExpenseHandler);
+
 
 /**
  * Function: renderExpensesOverview
@@ -84,4 +87,43 @@ function updateDateFormat(date){
     const day = d1.getDate();
     const dayOfWeek = d1.toLocaleString("en-us", {weekday: "short"});
     return (month + " " + day + ", " + dayOfWeek);
+}
+
+/**
+ * Function: setCategoryDropdown
+ * Description: Creates the options for the category dropdown in the Add Expenses modal window.
+ * @param none
+ * return: none
+ */
+function setCategoryDropdown(){
+    let categoryDropdown = document.getElementById("category");
+
+    expenseCategories.categories.forEach(function(item){
+        const op = document.createElement("option");
+        op.text = item;
+        op.value = item;
+        categoryDropdown.appendChild(op);
+    });
+}
+
+function addExpenseHandler(){
+    $(".expButton").click(function(event){
+        event.preventDefault();
+        const mode = $(this).data("mode");
+        if(mode === "edit"){
+            const expense = $(this).data("expense");
+            $("#modalTitle").text("Edit Expense");
+            $("#date").val(expense.date.split("T")[0]);
+            $("#category").val(expense.categoryName);
+            $("#description").val(expense.description);
+            $("#amount").val(expense.amount);
+            $("#expense-submit-btn").text("Save Changes");
+            $("#expenseModal").modal("show");
+        } else {
+            $("#modalTitle").text("Add Expense");
+            $("#expense-submit-btn").text("Submit");
+            $("#expenseForm")[0].reset();
+            $("#expenseModal").modal("show");
+        }
+   });
 }

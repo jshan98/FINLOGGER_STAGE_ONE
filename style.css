@@ -30,6 +30,8 @@
     --overview-icons-width: 40px;
     --expense-details-icons-width: 17px;
 
+    --modal-label-margin-top: 5px;
+
 }
 
 header {
@@ -110,4 +112,24 @@ body{
     font-family: var(--base-font);
     font-weight: var(--card-title-font-weight);
     font-size: var(--section-heading-font-size);
+}
+
+.modal > .modal-dialog > .modal-content > .modal-header > h5{
+    font-family: var(--base-font);
+}
+
+.modal > .modal-dialog > .modal-content > .modal-footer > .btn-secondary{
+    background-color: var(--secondary-btn-color);
+}
+
+.modal > .modal-dialog > .modal-content > .modal-footer > .btn-primary{
+    background-color: var(--primary-btn-color);
+}
+
+.modal > .modal-dialog > .modal-content > .modal-footer > .btn-primary:hover{
+    background-color: var(--hover-btn-color);
+}
+
+.modal > .modal-dialog > .modal-content > .modal-body > #expenseForm > .form-group > label{
+    margin-top: var(--modal-label-margin-top);
 }
