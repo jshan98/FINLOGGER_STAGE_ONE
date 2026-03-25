@@ -118,6 +118,14 @@ body{
     font-family: var(--base-font);
 }
 
+.modal > .modal-dialog > .modal-content > .modal-body > #expenseForm > div{
+    font-family: var(--base-font);
+}
+
+.modal > .modal-dialog > .modal-content > .modal-footer{
+    font-family: var(--base-font);
+}
+
 .modal > .modal-dialog > .modal-content > .modal-footer > .btn-secondary{
     background-color: var(--secondary-btn-color);
 }
