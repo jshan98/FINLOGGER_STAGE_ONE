@@ -20,8 +20,8 @@
     --btn-font-color: #FFFFFF;
     --hover-btn-color: #005d5d;
 
-    --month-filter-display: flex;
-    --month-filter-gap-size: 5px;
+    --month-filter-display: inline-block;
+    --month-filter-margin-left: 5px;
     --month-input-width: 170px;
 
     --row-margin-top: 30px;
@@ -103,11 +103,15 @@ body{
 }
 
 /** Month Filter Display Styling **/
-.container-lg > #rowOne > .col-md-auto{
+.container-lg > #rowOne > .col-md-auto > #monthFilter, #addExpense{
     display: var(--month-filter-display);
-    gap: var(--month-filter-gap-size);
 }
 
+/** Add Expense Button Margin Left **/
+.container-lg > #rowOne > .col-md-auto > #addExpense{
+    margin-left: var(--month-filter-margin-left);
+}
+ 
 /** Add Expense Button Styling **/
 .container-lg > #rowOne > .col-md-auto > #addExpense{
     background-color: var(--primary-btn-color);
