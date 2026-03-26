@@ -37,6 +37,8 @@ function renderExpenseSummary(){
         row.appendChild(cell2);
         expenseSummaryTableBody.appendChild(row);
     });
+    
+    console.log("Expenses Summary Data array length: " + expenseSummaryData.length);
 }
 
 /**
@@ -70,6 +72,8 @@ function renderExpenseData(){
             '<a href="#" class="delete" data-bs-toggle="modal"' +
             'data-bs-target="#deleteModal"><img src="./images/images/delete.png" alt="Delete"></a>'
         );
+
+        console.log("Expenses array length: " + expenseData.expenses.length);
         row.appendChild(cell4);
         expenseDataTableBody.appendChild(row);
     });
@@ -104,6 +108,8 @@ function setCategoryDropdown(){
         op.value = item;
         categoryDropdown.appendChild(op);
     });
+
+    console.log("Expense Categories array length: " + expenseCategories.categories.length);
 }
 
 /**

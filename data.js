@@ -1,5 +1,5 @@
 let expenseData = {
-    "totalExpenses": 1147,
+    "totalExpenses": 1193,
     "expenses": [
         {
             "_id": "6614df9c9b1af2b777d14da8",
@@ -11,7 +11,7 @@ let expenseData = {
         {
             "_id": "6614df9c9b1af2b777d14da5",
             "description": "Doctor Visit",
-            "amount": 40,
+            "amount": 86,
             "date": "2020-01-24T00:00:00.000Z",
             "categoryName": "Healthcare"
         },
